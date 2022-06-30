@@ -86,6 +86,19 @@ html, body {
     z-index: 99;
  }
 /* Octagon Shape */
+/* About Section */
+.about-title{
+    margin: 15px 0 10px 0;
+    font-size: 18pt;
+    color: #616161;
+    font-weight: bold;
+    text-align: center;
+}
+.about-text{
+    color: #616161;
+    line-height: 18pt;
+}
+/* About Section */
 .section-main{
     line-height: 18pt;
     padding: 100px 0 130px 0;
