@@ -35,6 +35,7 @@ html, body {
     background: #1b242f;
     border-bottom: 3px solid #E91E63;
     height: 50px;
+    width: 100%;
 }
 .nav-link{
     color: #fff;
@@ -45,6 +46,12 @@ html, body {
 .nav-pills .nav-link.active{
     background:none;
     color: #29B6F6;
+}
+nav.fixed {
+    bottom: inherit;
+    left: 0;
+    position: fixed;
+    top: 0;
 }
 /* Nav Bar */
 /* Octagon Shape */
