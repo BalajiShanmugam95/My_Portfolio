@@ -10,13 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
 </head>
   <body>
     <div data-bs-spy="scroll" data-bs-target="#custom-navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="h-100" tabindex="0">
     <!-- Header with Animation -->
         <div id="animation-header" class="dark-common-bg">
-            <div class="intro-container intro-text">
+            <div class="intro-container intro-text" data-aos="zoom-in" data-aos-duration="1000">
                Hello, I'm <span class="highlighter">Balaji Shanmugam</span>.
                <br>
                I'm a web developer.
@@ -45,12 +46,12 @@
     <!-- About -->
         <section>
             <div class="container center-everyting section-main flex-column" id="about-section">
-                <div class="topic-title">About</div>
-                <div class="title-highlighter"></div>
+                <div class="topic-title" data-aos="fade-right" data-aos-duration="1000">About</div>
+                <div class="title-highlighter" data-aos="fade-left" data-aos-duration="1000"></div>
                 <div class="row w-100">
                     <div class="col-md-3 col-sm-6 col-xs-6">
                         <div class="center-everyting flex-column">
-                            <div class="octagon">
+                            <div class="octagon" data-aos="flip-left" data-aos-duration="1000">
                                 <i class="fas fa-laptop-code"></i>
                             </div>
                             <div class="about-title">Front-end Developer</div>
@@ -59,7 +60,7 @@
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-6">
                         <div class="center-everyting flex-column">
-                            <div class="octagon">
+                            <div class="octagon" data-aos="flip-left" data-aos-duration="1000">
                                 <i class="fas fa-broom"></i>
                             </div>
                             <div class="about-title">Layout</div>
@@ -68,7 +69,7 @@
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-6">
                         <div class="center-everyting flex-column">
-                            <div class="octagon">
+                            <div class="octagon" data-aos="flip-left" data-aos-duration="1000">
                                 <i class="fas fa-tachometer-alt"></i>
                             </div>
                             <div class="about-title">Performance</div>
@@ -77,13 +78,64 @@
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-6">
                         <div class="center-everyting flex-column">
-                            <div class="octagon">
+                            <div class="octagon" data-aos="flip-left" data-aos-duration="1000">
                                 <i class="fas fa-users"></i>
                             </div>
                             <div class="about-title">Team Player</div>
                             <div class="text-center about-text">I genuinely care about people, and love helping fellow developer work on their craft.</div>
                         </div>
                     </div>
+                </div>
+                <div class="row mx-0 w-100" style="margin-top: 100px;">
+                    <!-- About Myself -->
+                    <div class="col-md-6 col-sm-12">
+                        <div class="about-me-container">
+                            <img src="/asset/img/shaped-avatar.png" class="my-avatar" alt="myself" data-aos="zoom-out" data-aos-duration="1000" />
+                            <span class="avatar-heading">Who's this guy?</span>
+                            <div class="avatar-text">I'm a Front-End Developer form Kumbakonam in Tamilnadu, India.
+                                <br>
+                                I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- About Myself -->
+    
+                    <!-- Technologies -->
+                    <div class="col-md-6 col-sm-12">
+                        <div class="technology-container" data-aos="zoom-out" data-aos-duration="1000">
+                            <div class="progress">
+                                <span class="bar-title">HTML</span>
+                                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                <span class="bar-filled-text">90%</span>
+                            </div>
+                            <div class="progress">
+                                <span class="bar-title">CSS</span>
+                                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                <span class="bar-filled-text">90%</span>
+                            </div>
+                            <div class="progress">
+                                <span class="bar-title">JavaScript</span>
+                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                <span class="bar-filled-text">80%</span>
+                            </div>
+                            <div class="progress">
+                                <span class="bar-title">Vue JS</span>
+                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                <span class="bar-filled-text">80%</span>
+                            </div>
+                            <div class="progress">
+                                <span class="bar-title">React JS</span>
+                                <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                <span class="bar-filled-text">60%</span>
+                            </div>
+                            <div class="progress">
+                                <span class="bar-title">UI Design</span>
+                                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                <span class="bar-filled-text">70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Technologies -->
                 </div>
             </div>
         </section>
@@ -93,6 +145,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="/js/jquery.particleground.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/js/particleground-starter.js"></script>
     <script src="/js/needed-actions.js"></script>
 </body>
