@@ -1,5 +1,6 @@
 (function() {
   AOS.init();
+  window.scrollTo(0, 0);
   var isMobile;
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       isMobile = true;
