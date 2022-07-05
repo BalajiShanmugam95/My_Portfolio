@@ -1,6 +1,5 @@
 (function() {
   AOS.init();
-  window.scrollTo(0, 0);
   var isMobile;
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       isMobile = true;
@@ -23,5 +22,34 @@
         lastPos = pos;
       }
   })
-
 })();
+
+$(document).ready(()=>{
+  window.scrollTo(0, 0);
+  var stillScrolling = false;
+  //Listen scroll event
+  var scrollTimeout;
+  addEventListener('scroll', function(e) {
+      stillScrolling=true;
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(function() {
+        stillScrolling=false;
+      }, 50);
+  });
+  //Listen scroll event
+
+  //scrollspy adjust offset
+  var offset = 50;
+  $('.navbar li a').click(function(event) {
+      event.preventDefault();
+      $($(this).attr('href'))[0].scrollIntoView();
+      var scrollListener;
+      scrollListener= setInterval(() => {
+        if(!stillScrolling){
+          scrollBy(0, -offset);
+          clearInterval(scrollListener)
+        }
+      }, 50);
+  });
+  //scrollspy adjust offset
+})
