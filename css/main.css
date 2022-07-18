@@ -43,7 +43,7 @@ html, body {
     height: 50px;
     width: 100%;
 }
-.nav-link,.nav-link:active{
+.nav-link,.nav-link:active,.nav-link:focus{
     color: #fff;
 }
 .nav-link:hover{
@@ -191,6 +191,26 @@ nav.fixed {
 }
 /* Technology */
 /* About Section */
+
+/* Contact Section */
+.contact-container{
+    background-color: #252934;
+    color: #fff;
+    padding-bottom:5rem ;
+}
+.contact-title{
+    color: #fff;
+    font-size: 29pt;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+.contact-title-highlighter{
+    background: #fff;
+    height: 4px;
+    margin: 15px 0 55px 0;
+    width: 100px;
+}
+/* Contact Section */
 .section-main{
     line-height: 18pt;
     padding: 100px 0 130px 0;
