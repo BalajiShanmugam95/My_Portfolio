@@ -36,20 +36,29 @@ $(document).ready(()=>{
         stillScrolling=false;
       }, 50);
   });
+
+  //Scroll to view
+    navgateTOId=(selector)=>{
+      var selectedArea = $(selector);
+       if(selectedArea)
+       selectedArea[0].scrollIntoView();
+    }
+  //Scroll to view
+
   //Listen scroll event
 
   //scrollspy adjust offset
-  var offset = 50;
-  $('.navbar li a').click(function(event) {
-      event.preventDefault();
-      $($(this).attr('href'))[0].scrollIntoView();
-      var scrollListener;
-      scrollListener= setInterval(() => {
-        if(!stillScrolling){
-          scrollBy(0, -offset);
-          clearInterval(scrollListener)
-        }
-      }, 50);
-  });
+  // var offset = 50;
+  // $('.navbar li a').click(function(event) {
+  //     event.preventDefault();
+  //     $($(this).attr('href'))[0].scrollIntoView();
+  //     var scrollListener;
+  //     scrollListener= setInterval(() => {
+  //       if(!stillScrolling){
+  //         scrollBy(0, -offset);
+  //         clearInterval(scrollListener)
+  //       }
+  //     }, 50);
+  // });
   //scrollspy adjust offset
 })
